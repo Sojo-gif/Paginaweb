@@ -1,0 +1,73 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="wiidth=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>DOCUMENT</title>
+</head>
+<body>
+   <header>
+  <div class="image-container" id="logo">
+    <img src="imágenes/logo.jpg" alt="logo">
+  </div>
+  </header>
+  <section id="hero">
+    <div class="hero-container" id="fondo">
+      <img src="imágenes/fondo.jpg" alt="fondo">    
+      </div> 
+    <div class="information-container">
+      <div class="image-container" id="foto">
+        <img src="imágenes/foto.jpg" alt="foto">
+      </div>
+      <div class="information">
+        <h1>
+          LEONARDO WILFREDO SOJO TORRES 
+        </h1>
+        <span>
+          @sojo
+        </span>
+        <p> Deportista de alto rendimiento|Responsable|5 años de experiencia en el equipo real Madrid </p>
+      </div>
+    </div>
+  </section>
+    <main>
+      <p>
+
+Desde muy pequeño, el fútbol ha sido mi pasión. Crecí en un barrio donde el deporte era el corazón de la comunidad. Recuerdo las horas que pasaba en la cancha con mis amigos, soñando con ser un gran jugador. Esa dedicación me llevó a unirme a un equipo local, donde empecé a desarrollar mis habilidades y a aprender sobre el trabajo en equipo.
+
+A lo largo de los años, he tenido la oportunidad de jugar en varias ligas y equipos. Cada experiencia ha sido única y me ha enseñado lecciones valiosas sobre la disciplina, la perseverancia y la importancia de nunca rendirse. He tenido momentos de alegría y éxito, como ganar campeonatos y recibir reconocimientos individuales, pero también he enfrentado desafíos que me han hecho más fuerte.
+
+Fuera del campo, me gusta compartir mis experiencias con jóvenes futbolistas, motivándolos a perseguir sus sueños y trabajar duro. Creo firmemente que con pasión y dedicación se pueden lograr grandes cosas.
+
+
+      </p>
+      <ul class="social-icons">
+         <li>
+           <a href="https://es.m.wikipedia.org/wiki/F%C3%BAtbol#:~:text=Es%2C%20ampliamente%2C%20considerado%20el%20deporte,primera%20federaci%C3%B3n%20oficial%20del%20mundo" class="social-icon" id="linkedin"><img src="imágenes/iconos/linkedin.png" alt="linkedin"></a> 
+         </li>
+        <li>
+           <a href="https://inovafit.com.mx/10-cosas-debes-saber-futbol/" class="social-icon" id="github"><img src="imágenes/iconos/github.png" alt="github"></a> 
+        </li>
+        <li>
+           <a href="https://ojo.pe/deportes/las-diez-reglas-basicas-de-futbol-noticia/" class="social-icon" id="twitter"><img src="imágenes/iconos/twitter.png" alt="twitter"></a> 
+        </li>
+      </ul>
+    <div id="visit-counter">
+<p>esta pagina ha sido visitada <span id="contador">0</span>veces</p>
+    </div>
+    </main>
+    <script>
+if (localStorage.getItem('visitas')){
+  var visitas = parseInt(localStorage.getItem('visitas')) + 1;
+  } else {
+  var visitas = 1;
+  }
+
+    localStorage.setItem('visitas',visitas);
+
+    document.getElementById('contador').textContent = visitas;
+    </script>
+</div>
+</body>
+</html>
